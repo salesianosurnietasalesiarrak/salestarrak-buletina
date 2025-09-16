@@ -221,7 +221,7 @@
         // Inicializar idioma basado en URL
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
-            const lang = urlParams.get('lang') || 'eu';
+            const lang = urlParams.get('lang') || window.location.hash.slice(1) || 'eu';
             switchLanguage(lang);
         });
     </script>
