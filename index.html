@@ -1,1 +1,241 @@
-n<!DOCTYPE html>\n<html lang="eu">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Salesberri Txikiak / Noticias Salesianas</title>\n    <style>\n        body { font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }\n        .container { max-width: 900px; margin: 0 auto; background: white; min-height: 100vh; }\n        .header { background: #FF0000; color: white; padding: 25px 16px; text-align: center; }\n        .logo { width: 300px; height: 80px; margin: 0 auto; border-radius: 8px; display: block; }\n        .title { font-size: 18px; font-weight: 600; letter-spacing: 0.5px; margin-top: 15px; text-transform: uppercase; }\n        .language-toggle { background: #f8f9fa; padding: 12px; text-align: center; border-bottom: 2px solid #e9ecef; }\n        .toggle-buttons { display: inline-block; }\n        .btn-toggle { display: inline-block; padding: 8px 20px; margin: 0 5px; border: none; border-radius: 25px; font-weight: bold; font-size: 14px; cursor: pointer; text-decoration: none; transition: all 0.3s ease; }\n        .btn-active { background: #4A6B73; color: white; }\n        .btn-inactive { background: #e0e0e0; color: #666; }\n        .date-bar { background: #4A6B73; color: white; text-align: center; padding: 12px 16px; font-weight: 700; }\n        .content { padding: 20px; }\n        .footer { background: #4A6B73; color: white; text-align: center; padding: 20px; font-size: 13px; }\n        .lang-content { display: none; }\n        .lang-content.active { display: block; }\n    </style>\n</head>\n<body>\n    <div class="container">\n        <header class="header">\n            <img src="./Logo.jpg" alt="Salestarrak" class="logo">\n            \n            <!-- Título EUSKERA -->\n            <div class="lang-content" data-lang="eu">\n                <div class="title">SALESBERRI TXIKIAK</div>\n            </div>\n            \n            <!-- Título ESPAÑOL -->\n            <div class="lang-content" data-lang="es">\n                <div class="title">NOTICIAS SALESIANAS</div>\n            </div>\n        </header>\n        \n        <div class="language-toggle">\n            <div class="toggle-buttons">\n                <button id="btn-euskera" class="btn-toggle btn-active" onclick="switchLanguage('eu')">\n                    Euskera\n                </button>\n                <button id="btn-espanol" class="btn-toggle btn-inactive" onclick="switchLanguage('es')">\n                    Español\n                </button>\n            </div>\n        </div>\n        \n        <div class="date-bar">\n            <!-- EUSKERA -->\n            <div class="lang-content" data-lang="eu">\n                2025-09-19 - 3 berriak\n            </div>\n            <!-- ESPAÑOL -->\n            <div class="lang-content" data-lang="es">\n                2025-09-19 - 3 noticias\n            </div>\n        </div>\n        \n        <main class="content">\n            \n    <div style="margin-bottom:30px;">\n      <div style="background:#4A6B73;color:#ffffff;padding:15px 20px;font-size:20px;font-weight:800;border-radius:15px;margin-bottom:15px;border-left:4px solid #FF0000;">\n        <!-- Título EUSKERA -->\n        <div class="lang-content" data-lang="eu">\n          Derrigorrezko Bigarren Hezkuntza\n          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">2 berriak</span>\n        </div>\n        <!-- Título ESPAÑOL -->\n        <div class="lang-content" data-lang="es" style="display:none;">\n          Educación Secundaria Obligatoria\n          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">2 noticias</span>\n        </div>\n      </div>\n      \n    <div style="background:#fafafa;border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin-bottom:12px;">\n      <!-- Contenido EUSKERA -->\n      <div class="lang-content" data-lang="eu">\n        \n        <div style="display:flex;gap:16px;align-items:flex-start;">\n          <img src="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1" alt="Argazkia"\n               style="width:120px;height:80px;object-fit:cover;border:1px solid #e6e6e6;border-radius:8px;flex-shrink:0;">\n          <div style="flex:1;">\n            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Salestarrak Magale Urnietako DBH Ikasleak Bidean</div>\n            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Salestarrak Magale Urnieta eskolako DBH mailako ikasleek 2025-2026 ikasturte berria harrera hartu dute lan tailerrak eta irteerak eginez. Errealitate birtuala, teknologia berriak eta artea nahasten dituzte, ikasleek berebiziko partaidetzarekin. Gure irakasleak lanean aritu dira, talde-lanak bultzatuz eta ideiak sortuz beren ikasleak animatuz. Edukia, hots, DBH mailako ikasleen bizitzan sakonduz, ikasturte honetan ekintza ugarien bidez. Eskola-komunitatea askotariko programazioa egiten du, hezkuntza-jarduera hauetan parte hartzeko modua hobetzen lagunduz. Gaur egun, ikasturte berrian sartzen diren prozesua alaitu eta interesgarria izan da, DBH mailako ikasleek bereziki miragarri sentituz.</div>\n            <div style="margin-top:8px;font-size:12px;color:#666;">Jose Luis Pinedo | 08/09/2025</div>\n            <div style="margin-top:8px;"><a href="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1" target="_blank" style="background:#FF0000;color:white;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold;">Argazki galeria ikusi</a></div>\n          </div>\n        </div>\n        \n      </div>\n      \n      <!-- Contenido ESPAÑOL -->\n      <div class="lang-content" data-lang="es" style="display:none;">\n        \n        <div style="display:flex;gap:16px;align-items:flex-start;">\n          <img src="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1" alt="Foto"\n               style="width:120px;height:80px;object-fit:cover;border:1px solid #e6e6e6;border-radius:8px;flex-shrink:0;">\n          <div style="flex:1;">\n            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Estudiantes de ESO de Salestarrak Magale Urnieta se Sumergen en un Nuevo Curso</div>\n            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Los estudiantes de Educación Secundaria Obligatoria (ESO) del centro educativo Salestarrak Magale Urnieta han dado la bienvenida al nuevo curso escolar 2025-2026 con talleres y salidas. Fusionando la realidad virtual, las nuevas tecnologías y el arte, los alumnos participan de manera excepcional. Nuestros profesores han estado trabajando en equipo, promoviendo trabajos colaborativos y fomentando la generación de ideas para inspirar a sus estudiantes. El contenido se sumerge en la vida de los estudiantes de ESO, en este curso a través de una variedad de actividades. La comunidad escolar elabora una programación diversa, mejorando la forma de participar en estas actividades educativas. Hoy en día, el proceso de inicio del nuevo curso ha sido estimulante e interesante, con los estudiantes de ESO sintiéndose especialmente sorprendidos.</div>\n            <div style="margin-top:8px;font-size:12px;color:#666;">Jose Luis Pinedo | 08/09/2025</div>\n            <div style="margin-top:8px;"><a href="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1" target="_blank" style="background:#FF0000;color:white;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold;">Ver galería de fotos</a></div>\n          </div>\n        </div>\n        \n      </div>\n    </div>\n  \n\n    <div style="background:#fafafa;border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin-bottom:12px;">\n      <!-- Contenido EUSKERA -->\n      <div class="lang-content" data-lang="eu">\n        \n        <div style="display:flex;gap:16px;align-items:flex-start;">\n          <img src="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1-BiuN9ixhgLl49HPHi6R4ioTQ" alt="Argazkia"\n               style="width:120px;height:80px;object-fit:cover;border:1px solid #e6e6e6;border-radius:8px;flex-shrink:0;">\n          <div style="flex:1;">\n            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Salestarrak Magale Urnieta: DBH3. Gela Ikasturan berriena ireki da</div>\n            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Salestarrak Magale Urnieta ikastetxean, gaur arratsaldean, urte berriaren irekitze ekitaldia ospatu da DBH3. Ikasle guztiak, arreta handiz, Jose Luis irakaslearekin bildu dira, hainbat asmo eta erronka zehatz aurkezteko. DBH3. gelan, ikasketak hasi direnean, ikasleek emozioz beteriko uneak bizi izan dituzte eta ibilbide berriari hasiera eman diote. Eskola-urte berriak nekazaritza jaien eta ekitaldi kulturalen zain daude, eta proiektu interaktiboak landu egingo dira, ikasleek duten parte-hartze aktiboa bultzatuz. Egitasmo honen helburua, DBH3. gela bateko ikasleen elkartasuna eta lankidetza sustatzea da, ikasketak dibertigarri eta irakargarri eginez bai ikasteko, baita besteekin harremanetan sartzeko ere.</div>\n            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 09/09/2025</div>\n            <div style="margin-top:8px;"><a href="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1-BiuN9ixhgLl49HPHi6R4ioTQ" target="_blank" style="background:#FF0000;color:white;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold;">Argazki galeria ikusi</a></div>\n          </div>\n        </div>\n        \n      </div>\n      \n      <!-- Contenido ESPAÑOL -->\n      <div class="lang-content" data-lang="es" style="display:none;">\n        \n        <div style="display:flex;gap:16px;align-items:flex-start;">\n          <img src="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1-BiuN9ixhgLl49HPHi6R4ioTQ" alt="Foto"\n               style="width:120px;height:80px;object-fit:cover;border:1px solid #e6e6e6;border-radius:8px;flex-shrink:0;">\n          <div style="flex:1;">\n            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Salestarrak Magale Urnieta: Inicio del nuevo curso en DBH3</div>\n            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">En el centro educativo Salestarrak Magale Urnieta, esta tarde ha tenido lugar el evento de apertura del nuevo curso para los alumnos de DBH3. Todos los estudiantes se han reunido con el profesor Jose Luis, con gran atención, para presentar varios objetivos y desafíos específicos. En el aula de DBH3, al comenzar las clases, los alumnos han experimentado momentos llenos de emoción y han dado comienzo a un nuevo camino. El nuevo año escolar promete estar lleno de fiestas campesinas y eventos culturales, con el desarrollo de proyectos interactivos que fomentan la participación activa de los estudiantes. El objetivo de este proyecto es fomentar la camaradería y la colaboración entre los alumnos de la clase de DBH3, haciendo que el aprendizaje sea tanto divertido como educativo, y promoviendo también la interacción con los demás.</div>\n            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 09/09/2025</div>\n            <div style="margin-top:8px;"><a href="https://drive.google.com/uc?export=view&amp;id=1Yq7fye1-BiuN9ixhgLl49HPHi6R4ioTQ" target="_blank" style="background:#FF0000;color:white;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold;">Ver galería de fotos</a></div>\n          </div>\n        </div>\n        \n      </div>\n    </div>\n  \n    </div>\n  \n    <div style="margin-bottom:30px;">\n      <div style="background:#4A6B73;color:#ffffff;padding:15px 20px;font-size:20px;font-weight:800;border-radius:15px;margin-bottom:15px;border-left:4px solid #FF0000;">\n        <!-- Título EUSKERA -->\n        <div class="lang-content" data-lang="eu">\n          Batxilergoa\n          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">1 berri</span>\n        </div>\n        <!-- Título ESPAÑOL -->\n        <div class="lang-content" data-lang="es" style="display:none;">\n          Bachillerato\n          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">1 noticia</span>\n        </div>\n      </div>\n      \n    <div style="background:#fafafa;border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin-bottom:12px;">\n      <!-- Contenido EUSKERA -->\n      <div class="lang-content" data-lang="eu">\n        \n        <div style="display:flex;gap:16px;align-items:flex-start;">\n          <img src="https://drive.google.com/drive/folders/1Ml5m9ZTZlKojAbMaaEX8IgfeGPcVyESH?usp=drive_link" alt="Argazkia"\n               style="width:120px;height:80px;object-fit:cover;border:1px solid #e6e6e6;border-radius:8px;flex-shrink:0;">\n          <div style="flex:1;">\n            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Selektibitatea: Preparatuta Gurutzatu dute Ikasleak Zigorra Atean Dutenetik</div>\n            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Salestarrak Magale Urnietako ikasleak ezinbesteko urteko momentura iritsi dira: selektibitatea, unibertsitate sartzeko azken proba. Ikasketak egiten ari diren ikasleek, irakasleek, eta familia guztiak aztertu beharreko gai nagusia. Hasierako zailtasunak erdietsi dira, eta orain, zuzenen konzentrazio eta lana aritzea da helburua. Etengabeko tresnak egitea, azterlanak begiratzea eta bidegabeko zailtasunak gainditzeko metodeak lantzea da gomendatzen dena. Selektibitatea oso zehatzak diren galderekin astun dezakete ezagutza azkarra behar baitute. Gogorarazi behar da, aldaketa psikologikoak ere izan ditzaketela ikasleek, zailtasunak gainditzeko. Azken finean, bizi diren unibertsitateko oparotasunak gisan partekatuko dituzte egonaldi hartan izan duten guztiekin.</div>\n            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 10/11/2025</div>\n            <div style="margin-top:8px;"><a href="https://drive.google.com/drive/folders/1Ml5m9ZTZlKojAbMaaEX8IgfeGPcVyESH?usp=drive_link" target="_blank" style="background:#FF0000;color:white;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold;">Argazki galeria ikusi</a></div>\n          </div>\n        </div>\n        \n      </div>\n      \n      <!-- Contenido ESPAÑOL -->\n      <div class="lang-content" data-lang="es" style="display:none;">\n        \n        <div style="display:flex;gap:16px;align-items:flex-start;">\n          <img src="https://drive.google.com/drive/folders/1Ml5m9ZTZlKojAbMaaEX8IgfeGPcVyESH?usp=drive_link" alt="Foto"\n               style="width:120px;height:80px;object-fit:cover;border:1px solid #e6e6e6;border-radius:8px;flex-shrink:0;">\n          <div style="flex:1;">\n            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Selectividad: los Estudiantes ya Mentalizados para Afrontar el Examen</div>\n            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Los estudiantes de Salestarrak Magale Urnieta han llegado al momento crucial del año: la selectividad, última prueba para acceder a la universidad. Tanto los propios estudiantes como los profesores y las familias se enfrentan a la materia principal que deben analizar. Las dificultades iniciales se van superando y ahora el objetivo es concentrarse y trabajar de manera efectiva. Se recomienda disponer de herramientas continuas, revisar los exámenes y trabajar en métodos para superar las dificultades inevitables. La selectividad puede confundir con preguntas muy precisas, requiriendo un rápido conocimiento. Se debe recordar que los cambios psicológicos también pueden ayudar a los estudiantes a superar las dificultades. Finalmente, compartirán las experiencias universitarias deseando compartir la riqueza vivida allí.</div>\n            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 10/11/2025</div>\n            <div style="margin-top:8px;"><a href="https://drive.google.com/drive/folders/1Ml5m9ZTZlKojAbMaaEX8IgfeGPcVyESH?usp=drive_link" target="_blank" style="background:#FF0000;color:white;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold;">Ver galería de fotos</a></div>\n          </div>\n        </div>\n        \n      </div>\n    </div>\n  \n    </div>\n  \n        </main>\n        \n        <footer class="footer">\n            <!-- EUSKERA -->\n            <div class="lang-content" data-lang="eu">\n                <div>Salesberri Txikiak - Salestarrak Magale Urnieta</div>\n                <div style="margin-top: 4px;">© 2025 Salestarrak Magale Urnieta.</div>\n            </div>\n            \n            <!-- ESPAÑOL -->\n            <div class="lang-content" data-lang="es">\n                <div>Noticias Salesianas - Salesianos Magale Urnieta</div>\n                <div style="margin-top: 4px;">© 2025 Salesianos Magale Urnieta.</div>\n            </div>\n        </footer>\n    </div>\n\n    <script>\n        function switchLanguage(lang) {\n            const url = new URL(window.location);\n            url.searchParams.set('lang', lang);\n            window.history.replaceState({}, '', url);\n            \n            document.querySelectorAll('.lang-content').forEach(el => {\n                el.classList.remove('active');\n            });\n            \n            document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => {\n                el.classList.add('active');\n            });\n            \n            const btnEuskera = document.getElementById('btn-euskera');\n            const btnEspanol = document.getElementById('btn-espanol');\n            \n            if (lang === 'eu') {\n                btnEuskera.className = 'btn-toggle btn-active';\n                btnEspanol.className = 'btn-toggle btn-inactive';\n            } else {\n                btnEspanol.className = 'btn-toggle btn-active';\n                btnEuskera.className = 'btn-toggle btn-inactive';\n            }\n        }\n\n        document.addEventListener('DOMContentLoaded', function() {\n            const urlParams = new URLSearchParams(window.location.search);\n            const lang = urlParams.get('lang') || 'eu';\n            switchLanguage(lang);\n        });\n    </script>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesberri Txikiak / Noticias Salesianas</title>
+    <style>
+        body { font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: white; min-height: 100vh; }
+        .header { background: #FF0000; color: white; padding: 25px 16px; text-align: center; }
+        .logo { width: 300px; height: 80px; margin: 0 auto; border-radius: 8px; display: block; background: #fff; }
+        .title { font-size: 18px; font-weight: 600; letter-spacing: 0.5px; margin-top: 15px; text-transform: uppercase; }
+        .language-toggle { background: #f8f9fa; padding: 12px; text-align: center; border-bottom: 2px solid #e9ecef; }
+        .toggle-buttons { display: inline-block; }
+        .btn-toggle { display: inline-block; padding: 8px 20px; margin: 0 5px; border: none; border-radius: 25px; font-weight: bold; font-size: 14px; cursor: pointer; text-decoration: none; transition: all 0.3s ease; }
+        .btn-active { background: #4A6B73; color: white; }
+        .btn-inactive { background: #e0e0e0; color: #666; }
+        .date-bar { background: #4A6B73; color: white; text-align: center; padding: 12px 16px; font-weight: 700; }
+        .content { padding: 20px; }
+        .footer { background: #4A6B73; color: white; text-align: center; padding: 20px; font-size: 13px; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        .news-image { width: 120px; height: 80px; object-fit: cover; border: 1px solid #e6e6e6; border-radius: 8px; flex-shrink: 0; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo" style="display: flex; align-items: center; justify-content: center; color: #FF0000; font-weight: bold; font-size: 24px;">
+                SALESTARRAK
+            </div>
+            
+            <!-- Título EUSKERA -->
+            <div class="lang-content" data-lang="eu">
+                <div class="title">SALESBERRI TXIKIAK</div>
+            </div>
+            
+            <!-- Título ESPAÑOL -->
+            <div class="lang-content" data-lang="es">
+                <div class="title">NOTICIAS SALESIANAS</div>
+            </div>
+        </header>
+        
+        <div class="language-toggle">
+            <div class="toggle-buttons">
+                <button id="btn-euskera" class="btn-toggle btn-active" onclick="switchLanguage('eu')">
+                    Euskera
+                </button>
+                <button id="btn-espanol" class="btn-toggle btn-inactive" onclick="switchLanguage('es')">
+                    Español
+                </button>
+            </div>
+        </div>
+        
+        <div class="date-bar">
+            <!-- EUSKERA -->
+            <div class="lang-content" data-lang="eu">
+                2025-09-17 - 3 berriak
+            </div>
+            <!-- ESPAÑOL -->
+            <div class="lang-content" data-lang="es">
+                2025-09-17 - 3 noticias
+            </div>
+        </div>
+        
+        <main class="content">
+            
+    <div style="margin-bottom:30px;">
+      <div style="background:#4A6B73;color:#ffffff;padding:15px 20px;font-size:20px;font-weight:800;border-radius:15px;margin-bottom:15px;border-left:4px solid #FF0000;">
+        <!-- Título EUSKERA -->
+        <div class="lang-content" data-lang="eu">
+          Derrigorrezko Bigarren Hezkuntza
+          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">2 berriak</span>
+        </div>
+        <!-- Título ESPAÑOL - CORREGIDO: SIN style="display:none;" -->
+        <div class="lang-content" data-lang="es">
+          Educación Secundaria Obligatoria
+          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">2 noticias</span>
+        </div>
+      </div>
+      
+    <div style="background:#fafafa;border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin-bottom:12px;">
+      <!-- Contenido EUSKERA -->
+      <div class="lang-content" data-lang="eu">
+        
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div class="news-image"></div>
+          <div style="flex:1;">
+            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Salestarrak Magale Urnietako Ikasleak Berritasunean Murgilduta</div>
+            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Salestarrak Magale Urnietako DBH ikasleak ilusio handiz, berritasunez eta energia positiboarekin hasi dute ikasturte berriarekin. Ikastetxean, etorkizuna eraikitzeko une berezia da, non ikasleek laguntasun eta ardura sentitzen dituzte. Irakasleak ere, norabide berri batean murgilduak, ikasleen ardura eta lana babestu eta sustatu egiten dute.</div>
+            <div style="margin-top:8px;font-size:12px;color:#666;">Jose Luis Pinedo | 08/09/2025</div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Contenido ESPAÑOL -->
+      <div class="lang-content" data-lang="es">
+        
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div class="news-image"></div>
+          <div style="flex:1;">
+            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Estudiantes de Salestarrak Magale Urnieta Inician el Nuevo Camino Educativo</div>
+            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Los estudiantes de DBH en Salestarrak Magale Urnieta han iniciado con gran ilusión, renovación y energía positiva el comienzo del nuevo curso. En la escuela, es un momento especial para construir el futuro, donde los alumnos se sienten apoyados y responsables. Los profesores, adentrándose en una nueva dirección, respaldan y fomentan la responsabilidad y el trabajo de los estudiantes.</div>
+            <div style="margin-top:8px;font-size:12px;color:#666;">Jose Luis Pinedo | 08/09/2025</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+
+    <div style="background:#fafafa;border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin-bottom:12px;">
+      <!-- Contenido EUSKERA -->
+      <div class="lang-content" data-lang="eu">
+        
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div class="news-image"></div>
+          <div style="flex:1;">
+            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Salestarrak Magale Urnietako Ikasleen Ikasturte Berria Hasten Da</div>
+            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Salestarrak Magale Urnietako ikastetxean, ikasleak gozo handiz hartu dute parte ikasturte berriaren hasieran. Aurten, DBH 3. mailako ikasleak Jose Luisekin batu dira inaugurazio ekitaldian. Eskola zabalik ikasi gogorra datorren hiru ikasturteko amaieran, ikasleek ilusioz beteriko urte berria hasi dute.</div>
+            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 09/09/2025</div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Contenido ESPAÑOL - CORREGIDO: SIN style="display:none;" -->
+      <div class="lang-content" data-lang="es">
+        
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div class="news-image"></div>
+          <div style="flex:1;">
+            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Comienza el Nuevo Curso Escolar en Salestarrak Magale Urnieta</div>
+            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">En el centro educativo Salestarrak Magale Urnieta, los estudiantes han participado con entusiasmo en el comienzo del nuevo curso escolar. Este año, los alumnos de DBH3 se han reunido con Jose Luis en el acto de inauguración. Con las puertas de la escuela abiertas y un exigente periodo de aprendizaje de tres años por delante, los estudiantes han iniciado con ilusión el nuevo año.</div>
+            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 09/09/2025</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+    </div>
+  
+    <div style="margin-bottom:30px;">
+      <div style="background:#4A6B73;color:#ffffff;padding:15px 20px;font-size:20px;font-weight:800;border-radius:15px;margin-bottom:15px;border-left:4px solid #FF0000;">
+        <!-- Título EUSKERA -->
+        <div class="lang-content" data-lang="eu">
+          Batxilergoa
+          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">1 berri</span>
+        </div>
+        <!-- Título ESPAÑOL - CORREGIDO: SIN style="display:none;" -->
+        <div class="lang-content" data-lang="es">
+          Bachillerato
+          <span style="font-size:14px;font-weight:normal;opacity:0.9;margin-left:10px;">1 noticia</span>
+        </div>
+      </div>
+      
+    <div style="background:#fafafa;border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin-bottom:12px;">
+      <!-- Contenido EUSKERA -->
+      <div class="lang-content" data-lang="eu">
+        
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div class="news-image"></div>
+          <div style="flex:1;">
+            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">Selektibitatea: Ikasleen Etorkizunerako Prestakuntza</div>
+            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Salestarrak Magale Urnietako batxilergoko ikasleek selektibitate proben aurrean prestakuntza sendoa jasotzen ari dira. Ikastetxeak ikasleen arrakasta bermatzeko behar diren tresna eta laguntza guztiak eskaintzen ditu, etorkizunean nahi duten ikasketa universitarioak lortu ditzaten.</div>
+            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 10/11/2025</div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Contenido ESPAÑOL - CORREGIDO: SIN style="display:none;" -->
+      <div class="lang-content" data-lang="es">
+        
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div class="news-image"></div>
+          <div style="flex:1;">
+            <div style="color:#4A6B73;font-size:18px;font-weight:800;margin:0 0 6px 0;">La Selectividad: Preparación para el Futuro de los Estudiantes</div>
+            <div style="font-size:14px;line-height:1.6;margin-bottom:6px;">Los estudiantes de bachillerato de Salestarrak Magale Urnieta están recibiendo una preparación sólida ante las pruebas de selectividad. El centro educativo ofrece todas las herramientas y apoyo necesarios para garantizar el éxito de los alumnos y que puedan lograr los estudios universitarios que desean en el futuro.</div>
+            <div style="margin-top:8px;font-size:12px;color:#666;">Iñaki Lopetegi | 10/11/2025</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+    </div>
+  
+        </main>
+        
+        <footer class="footer">
+            <!-- EUSKERA -->
+            <div class="lang-content" data-lang="eu">
+                <div>Salesberri Txikiak - Salestarrak Magale Urnieta</div>
+                <div style="margin-top: 4px;">© 2025 Salestarrak Magale Urnieta.</div>
+            </div>
+            
+            <!-- ESPAÑOL -->
+            <div class="lang-content" data-lang="es">
+                <div>Noticias Salesianas - Salesianos Magale Urnieta</div>
+                <div style="margin-top: 4px;">© 2025 Salesianos Magale Urnieta.</div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            const url = new URL(window.location);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url);
+            
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => {
+                el.classList.add('active');
+            });
+            
+            const btnEuskera = document.getElementById('btn-euskera');
+            const btnEspanol = document.getElementById('btn-espanol');
+            
+            if (lang === 'eu') {
+                btnEuskera.className = 'btn-toggle btn-active';
+                btnEspanol.className = 'btn-toggle btn-inactive';
+            } else {
+                btnEspanol.className = 'btn-toggle btn-active';
+                btnEuskera.className = 'btn-toggle btn-inactive';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang') || 'eu';
+            switchLanguage(lang);
+        });
+    </script>
+</body>
+</html>
